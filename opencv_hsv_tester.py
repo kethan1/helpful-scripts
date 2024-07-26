@@ -149,7 +149,7 @@ elif source_type == "directory":
             elif key == ord("n"):
                 break
 elif source_type == "video":
-    cap = cv2.VideoCapture("crp.mp4")
+    cap = cv2.VideoCapture(args.source)
     cap.set(cv2.CAP_PROP_POS_FRAMES, args.starting_frame)
 
     while True:
